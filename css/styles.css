@@ -1,0 +1,75 @@
+:root {
+  --title-text-color: #212121;
+  --focus-text-color: #2196f3;
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --button-color: #f5f4fa;
+  --background-color: #2f303a;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+/* header */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.logo > span {
+  color: var(--focus-text-color);
+}
+/* site nav */
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--focus-text-color);
+}
+.site-nav .link.current {
+  color: var(--focus-text-color);
+}
+/* contacts */
+.contacts.list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.contacts.list .link:hover,
+.contacts.list .link:focus {
+  color: var(--focus-text-color);
+}
+/* hero */
+/* section */
+/* main */
+/* footer */
+.footer {
+  background-color: var(--background-color);
+}
+.footer-address {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer .logo {
+  color: var(--secondary-text-color);
+}
