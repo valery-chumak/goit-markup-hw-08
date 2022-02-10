@@ -129,10 +129,10 @@ body {
   background-color: var(--background-color);
 }
 .footer-address {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 .footer .link {
   color: var(--footer-contacts);
@@ -140,10 +140,19 @@ body {
 .footer .logo {
   color: var(--secondary-text-color);
 }
+.address-item .link {
+  color: var(--secondary-text-color);
+}
 
 /* Portfolio */
 
 .main-button .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
   background: var(--button-color);
   cursor: pointer;
 }
