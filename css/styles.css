@@ -197,6 +197,10 @@ image {
   letter-spacing: 0.03em;
 }
 /* work section */
+.work-section {
+  padding-top: 0;
+}
+
 .work-section .title,
 .comand-section h2.title {
   margin-bottom: 50px;
