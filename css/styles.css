@@ -38,22 +38,26 @@ image {
 .link {
   text-decoration: none;
 }
+.section {
+  padding: 94px 15px;
+  /* outline: solid tomato; */
+}
 .container {
   /* align-items: center; */
   width: 1200px;
-  padding: 94px 15px;
   margin: 0 auto;
-  /* outline: solid tomato; */
 }
 /* header */
-.header .container,
-.footer .container {
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+.header,
+.footer {
   padding: 0 15px;
 }
 .header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
 }
 .header .logo {
   margin-right: 93px;
@@ -121,12 +125,17 @@ image {
 
 /* main */
 /* hero */
-.hero-section .container {
+.hero-section {
   background: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  /* padding-left: 452px;
+  padding-right: 452px; */
   text-align: center;
 }
+/* .hero-section .container {
+   align-items: center; 
+}  */
 .hero-title {
   margin-bottom: 30px;
   width: 696px;
@@ -188,9 +197,6 @@ image {
   letter-spacing: 0.03em;
 }
 /* work section */
-.work-section .container {
-  padding-top: 0;
-}
 .work-section .title,
 .comand-section h2.title {
   margin-bottom: 50px;
@@ -239,18 +245,15 @@ image {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.comand-section .text {
-  margin-bottom: 30px;
-}
-.comand-section .image {
-  margin-bottom: 30px;
+.worker-info {
+  margin: 30px 0px;
 }
 .comand-section h3.title {
   margin-bottom: 10px;
 }
 
 /* footer */
-.footer .container {
+.footer {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -295,7 +298,7 @@ image {
 .main-button.list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .main-button .button {
   padding: 6px 22px;
@@ -333,8 +336,11 @@ image {
 .applications .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+.app-info {
+  margin: 20px 24px;
+}
 .applications .title {
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
 
   font-weight: bold;
   font-size: 18px;
@@ -342,8 +348,6 @@ image {
   letter-spacing: 0.06em;
 }
 .applications .text {
-  margin: 0px 24px 20px;
-
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
