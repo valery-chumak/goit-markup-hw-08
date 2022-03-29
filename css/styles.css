@@ -406,9 +406,6 @@ image {
 .footer-address .link:focus {
   color: var(--focus-text-color);
 }
-/* .footer .link {
-  display: inline-block;
-} */
 .footer .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
