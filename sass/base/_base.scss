@@ -1,0 +1,46 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0 0;
+}
+
+image {
+    display: block;
+}
+
+.icon {
+    fill: var(--icon-color);
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section {
+    padding: 94px 0px;
+    /* outline: solid tomato; */
+}
+
+.title {
+    color: var(--title-text-color);
+}

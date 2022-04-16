@@ -1,0 +1,117 @@
+/* footer */
+.footer {
+    padding: 0 15px;
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-address-list__link {
+    color: var(--footer-contacts);
+}
+
+.logo--mode-light {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--second-logo-color);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+
+    margin-bottom: 20px;
+}
+
+.footer-address-list__link--light {
+    color: var(--secondary-text-color);
+}
+
+.footer-address-list__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--focus-text-color);
+    }
+}
+
+.footer-address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+/* socials footer */
+.social-media-list--start {
+    padding: 0 0;
+}
+
+.social-media-list__link {
+    background-color: var(--footer-icons-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--focus-text-color);
+    }
+}
+
+.social-media-list__icon--light {
+    fill: var(--secondary-text-color);
+}
+
+.wrapper-social__text,
+.wrapper-follow__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--secondary-text-color);
+}
+
+.footer-container {
+    display: flex;
+}
+
+.wrapper-address {
+    margin-right: 70px;
+}
+
+.wrapper-social {
+    margin-top: 15px;
+}
+
+.wrapper-follow {
+    margin-left: 93px;
+    margin-top: 15px;
+}
+
+.follow-button__send-icon {
+    margin-left: 10px;
+    fill: var(--secondary-text-color);
+}
+
+.wrapper-follow__input::placeholder {
+    color: var(--footer-placeholder);
+}
+
+.wrapper-follow__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 0px 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+}

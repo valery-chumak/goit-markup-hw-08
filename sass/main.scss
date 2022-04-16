@@ -1,0 +1,22 @@
+// variables
+@import "./variables/variables";
+
+// utils
+@import "./utils/visually-hidden";
+
+
+// base styles
+@import "./base/base";
+
+// components
+@import "./components/container";
+@import "./components/btn";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/priority";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio";
