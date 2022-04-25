@@ -2,7 +2,9 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
 }
-
+.no-scroll{
+    overflow-y: hidden;
+}
 *,
 *::before,
 *::after {

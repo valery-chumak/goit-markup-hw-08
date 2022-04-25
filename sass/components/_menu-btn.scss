@@ -1,0 +1,48 @@
+.menu-button{
+    
+    width:40px;
+    height:40px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    z-index: 10;
+
+    
+
+    &__icon{
+        &-open{
+            opacity: 1;
+            fill: var(--second-logo-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover, &:focus{
+                fill: var(--focus-text-color);   
+            }
+        }
+        &-close{
+            opacity: 0;
+            fill: var(--second-logo-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+            &:hover,
+            &:focus {
+                fill: var(--focus-text-color);
+            }
+         }
+    }
+    &.is-active .menu-button__icon-open {
+        opacity: 0;
+    }
+    &.is-active .menu-button__icon-close {
+        opacity: 1;
+    }
+}
+// .menu-button.is-active .menu-button__icon-open{
+//     opacity: 0;
+// }
+// .menu-button.is-active .menu-button__icon-close{
+//     opacity: 1;
+// }

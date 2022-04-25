@@ -2,13 +2,25 @@
 .header {
     border-bottom: 1px solid var(--border-color);
     padding: 0 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width:768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
 }
 .container--flexible {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:768px) {
+        justify-content: space-between;
+    }
 }
 .logo--mode-dark {
-    margin-right: 93px;
+    @media screen and (min-width:1200px){
+        margin-right: 93px;
+    }
 
     font-family: Raleway, sans-serif;
     font-weight: bold;
@@ -23,6 +35,9 @@
     color: var(--focus-text-color);
 }
 /* site nav */
+.nav{
+    display: none;
+}
 
 .nav-list {
     display: flex;
@@ -73,8 +88,9 @@
 
 /* contacts */
 .list-contacts {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // margin-left: auto;
 }
 
 .list-contacts__link {

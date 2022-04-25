@@ -26,6 +26,24 @@
         <a lang="en" class="logo logo--mode-dark" href="./index.html">
           <span class="logo__part logo__part--accent">Web</span>Studio
         </a>
+        <button
+          class="menu-button"
+          data-menu-button
+          type="button"
+          aria-label="Кнопка открытия меню"
+          aria-expanded="false"
+        >
+          <svg class="menu-button__icon" width="40px" height="40px">
+            <use
+              class="menu-button__icon-open"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-button__icon-close"
+              href="./images/icons.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="list nav-list">
             <li class="nav__item">
@@ -67,7 +85,7 @@
 
     <main>
       <!-- Секция Герой -->
-      <section class="section hero-section">
+      <!-- <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="hero-container__title">
             Эффективные решения для вашего бизнеса
@@ -76,10 +94,10 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция Приоритеты фирмы -->
-      <section class="section priority-section">
+      <!-- <section class="section priority-section">
         <div class="container">
           <ul class="list priority-list">
             <li class="priority-list__item">
@@ -148,10 +166,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция Чем занимаемся -->
-      <section class="section work-section">
+      <!-- <section class="section work-section">
         <div class="container work-container">
           <h2 class="title work-container__title">Чем мы занимаемся</h2>
           <ul class="list list-work">
@@ -199,10 +217,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция Команда -->
-      <section class="section team-section">
+      <!-- <section class="section team-section">
         <div class="container team-container">
           <h2 class="title team-container__title">Наша команда</h2>
           <ul class="list team-list">
@@ -444,10 +462,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция Клиенты -->
-      <section class="section clients-section">
+      <!-- <section class="section clients-section">
         <div class="container clients-container">
           <h2 class="title clients-container__title">Постоянные клиенты</h2>
           <ul class="list clients-list">
@@ -519,10 +537,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="wrapper-address">
           <a lang="en" href="./index.html" class="logo logo--mode-light"
@@ -625,10 +643,87 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Мобильное меню  -->
+
+    <div class="mobile-menu" data-menu>
+      <nav class="list mobile-nav">
+        <ul class="list mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="link mobile-nav__link">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="link mobile-nav__link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="" class="link mobile-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__group">
+        <ul class="list mobile-menu__contacts">
+          <li class="mobile-menu__item mobile-menu__item--bottom">
+            <a
+              href="tel:+380961111111"
+              class="link mobile-menu__link mobile-menu__link--focus"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="link mobile-menu__link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list social-network__list">
+          <li class="social-network__item">
+            <a
+              class="link social-network__link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-network__item">
+            <a
+              class="link social-network__link"
+              href="https://twitter.com/?lang=ru"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="social-network__item">
+            <a
+              class="link social-network__link"
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="social-network__item">
+            <a
+              class="link social-network__link"
+              href="https://www.linkedin.com/feed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" type="button" data-modal-close>
           <svg class="button-close__close-icon" width="11px" height="11px">
@@ -719,7 +814,9 @@
           <button type="submit" class="button submit-button">Отправить</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
