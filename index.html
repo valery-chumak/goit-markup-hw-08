@@ -85,7 +85,7 @@
 
     <main>
       <!-- Секция Герой -->
-      <!-- <section class="section hero-section">
+      <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="hero-container__title">
             Эффективные решения для вашего бизнеса
@@ -94,10 +94,10 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Приоритеты фирмы -->
-      <!-- <section class="section priority-section">
+      <section class="section priority-section">
         <div class="container">
           <ul class="list priority-list">
             <li class="priority-list__item">
@@ -166,10 +166,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Чем занимаемся -->
-      <!-- <section class="section work-section">
+      <section class="section work-section">
         <div class="container work-container">
           <h2 class="title work-container__title">Чем мы занимаемся</h2>
           <ul class="list list-work">
@@ -217,10 +217,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Команда -->
-      <!-- <section class="section team-section">
+      <section class="section team-section">
         <div class="container team-container">
           <h2 class="title team-container__title">Наша команда</h2>
           <ul class="list team-list">
@@ -229,8 +229,6 @@
                 class="team-list__image"
                 src="./images/studio/member1.jpg"
                 alt="Улыбающийся мужчина в очках"
-                width="270"
-                height="260"
               />
               <div class="team-list__worker-info">
                 <h3 class="title team-list__title">Игорь Демьяненко</h3>
@@ -288,8 +286,6 @@
                 class="team-list__image"
                 src="./images/studio/member2.jpg"
                 alt="Женщина в очках"
-                width="270"
-                height="260"
               />
               <div class="team-list__worker-info">
                 <h3 class="title team-list__title">Ольга Репина</h3>
@@ -347,8 +343,6 @@
                 class="team-list__image"
                 src="./images/studio/member3.jpg"
                 alt="Улыбающийся мужчина"
-                width="270"
-                height="260"
               />
               <div class="team-list__worker-info">
                 <h3 class="title team-list__title">Николай Тарасов</h3>
@@ -406,8 +400,6 @@
                 class="team-list__image"
                 src="./images/studio/member4.jpg"
                 alt="Серьезный мужчина в очках"
-                width="270"
-                height="260"
               />
               <div class="team-list__worker-info">
                 <h3 class="title team-list__title">Михаил Ермаков</h3>
@@ -462,10 +454,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Клиенты -->
-      <!-- <section class="section clients-section">
+      <section class="section clients-section"
         <div class="container clients-container">
           <h2 class="title clients-container__title">Постоянные клиенты</h2>
           <ul class="list clients-list">
@@ -537,11 +529,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
+      <div class="wrapper-flex">        
         <div class="wrapper-address">
           <a lang="en" href="./index.html" class="logo logo--mode-light"
             ><span class="logo__part logo__part--accent">Web</span>Studio</a
@@ -621,6 +614,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <div class="wrapper-follow">
           <p class="wrapper-follow__text">Подпишитесь на рассылку</p>
           <form class="wrapper-follow__form">
@@ -643,7 +637,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Мобильное меню  -->
 
@@ -651,7 +645,7 @@
       <nav class="list mobile-nav">
         <ul class="list mobile-nav__list">
           <li class="mobile-nav__item">
-            <a href="./index.html" class="link mobile-nav__link">Студия</a>
+            <a href="./index.html" class="link mobile-nav__link mobile-nav__link--current">Студия</a>
           </li>
           <li class="mobile-nav__item">
             <a href="./portfolio.html" class="link mobile-nav__link"
@@ -723,7 +717,7 @@
     </div>
 
     <!-- Модальное окно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" type="button" data-modal-close>
           <svg class="button-close__close-icon" width="11px" height="11px">
@@ -814,9 +808,9 @@
           <button type="submit" class="button submit-button">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

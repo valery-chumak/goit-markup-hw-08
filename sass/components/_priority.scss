@@ -1,15 +1,31 @@
 /*proirity section */
 .priority-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (min-width:768px){
+        margin: -15px;
+    }
+    @media screen and (min-width:1200px) {
+        margin: -15px;
+    }
 }
 
 .priority-list__item {
-    width: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
+    
+    @media screen and (max-width:767px) {
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
+    @media screen and (min-width:768px) {
+        margin: 15px;
+        width: calc((100% - 4 * 15px)/2);
+    }
+    @media screen and (min-width:1200px) {
+        margin: 15px;
+        width: calc((100% - 8 * 15px)/4);
+    }
+
 }
 
 .priority-list__thumb {
@@ -30,10 +46,18 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
 }
 
 .priority-list__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
 }

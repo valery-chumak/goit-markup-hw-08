@@ -36,11 +36,30 @@
     min-width: 200px;
     min-height: 50px;
     padding: 10px 29px;
+    margin-top: 20px;
+
+
+    @media screen and (min-width:1200px){
+        margin-top: 0;
+    }
 }
 .main-button-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (max-width:767px) {
+       margin-top: -7.5px;
+       margin-bottom: -7.5px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 .main-button-list__button {
@@ -58,6 +77,7 @@
     border-radius: 4px;
     border: 1px solid transparent;
 
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -71,7 +91,12 @@
 .main-button-list__item:not(:last-child) {
     margin-right: 8px;
 }
-
+.main-button-list__item{
+    @media screen and (max-width:767px) {
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
+    }
+}
 
 .button-close {
     position: absolute;
