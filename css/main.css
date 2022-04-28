@@ -489,7 +489,7 @@ img, image {
 .hero-section {
   position: relative;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero-background.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/bg-hero_lg.jpg");
   background-repeat: no-repeat;
   background-position: 10%;
   background-size: cover;
@@ -511,6 +511,12 @@ img, image {
   .hero-section {
     height: 600px;
     width: auto;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/bg-hero_lg@2x.jpg");
   }
 }
 
