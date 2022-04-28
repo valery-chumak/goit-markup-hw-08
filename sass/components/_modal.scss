@@ -16,21 +16,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 95%;
     height: 609px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--secondary-text-color);
-    @media screen and (min-width:1200px){
+    @media screen and (max-width:479px){
+        max-width: 400px;
+    }
+    @media screen and (min-width:480px){
+        width: 450px;
+    }
+    @media screen and (min-width:1200px) {
         width: 528px;
         height: 581px;
     }
 }
 
 .modal-form__title {
-    display: contents;
+    // display: contents;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -50,6 +56,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    @media screen and (max-width:479px){
+        width: inherit;
+    }
 }
 
 .modal-form__form-label {
@@ -79,7 +88,7 @@
         border-color: var(--focus-text-color);
     }
 
-    &:focus + .modal-form__icon-check {
+    &:focus+.modal-form__icon-check {
         fill: var(--focus-text-color);
     }
 }
@@ -104,7 +113,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
-    
+
         color: rgba(117, 117, 117, 0.5);
     }
 }
@@ -114,10 +123,12 @@
     flex-direction: column;
     margin-top: 12px;
     margin-bottom: 20px;
-    width: 370px;
+    width: auto;
     height: 342px;
-
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:480px) {
+        width: 370px;
+    }
+    @media screen and (min-width:1200px) {
         width: 448px;
         height: 342px;
     }
@@ -151,8 +162,8 @@
     letter-spacing: 0.03em;
 
     @media screen and (min-width:1200px) {
-    font-size: 14px;
-    line-height: 1.71;
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 
@@ -164,7 +175,8 @@
     text-decoration-line: underline;
 
     color: var(--focus-text-color);
-    @media screen and (min-width:1200px){
+
+    @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.71;
     }
@@ -200,4 +212,3 @@
         background-origin: border-box;
     }
 }
-
