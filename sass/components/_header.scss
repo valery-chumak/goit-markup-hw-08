@@ -2,12 +2,15 @@
 .header {
     border-bottom: 1px solid var(--border-color);
     padding: 0 15px;
+    
+    @media screen and (max-width:767px) {
     padding-top: 16px;
     padding-bottom: 16px;
-    @media screen and (min-width:768px) {
-        padding-top: 26px;
-        padding-bottom: 26px;
     }
+    // @media screen and (min-width:768px) {
+    //     padding-top: 26px;
+    //     padding-bottom: 26px;
+    // }
 }
 .container--flexible {
     display: flex;
