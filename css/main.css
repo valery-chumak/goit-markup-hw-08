@@ -489,7 +489,7 @@ img, image {
 .hero-section {
   position: relative;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/studio/hero-bg_lg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("https: //github.com/valery-chumak/goit-markup-hw-08/tree/main/images/studio/hero-bg_lg.jpg");
   background-repeat: no-repeat;
   background-position: 10%;
   background-size: cover;
